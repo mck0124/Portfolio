@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+public/artifacts/zoop-ppt-english.pdf
 
 # debug
 npm-debug.log*
