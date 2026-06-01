@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Minchan Kim - AI & Software Engineer",
   description:
-    "A screen-based portfolio of AI systems, backend architecture, mobile products, and interactive experiments by Minchan Kim.",
+    "A concise one-page portfolio of AI systems, backend architecture, mobile products, and interactive product work by Minchan Kim.",
   openGraph: {
     title: "Minchan Kim - AI & Software Engineer",
     description:
-      "Explore AI, backend, mobile, systems, awards, and engineering work through a polished portfolio interface.",
+      "Explore selected AI, backend, mobile, systems, awards, and engineering work by Minchan Kim.",
     type: "website",
   },
 };
@@ -19,11 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="h-full antialiased"
-    >
-      <body className="min-h-full bg-[#090d0b] text-[#f5f7f2]">{children}</body>
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }

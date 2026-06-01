@@ -26,16 +26,6 @@ export type Project = {
   };
 };
 
-export type WorldNode = {
-  id: string;
-  label: string;
-  eyebrow: string;
-  description: string;
-  target: string;
-  accent: "green" | "cyan" | "amber" | "steel";
-  position: string;
-};
-
 export type EducationItem = {
   school: string;
   program: string;
@@ -300,54 +290,6 @@ export const projects: Project[] = [
   },
 ];
 
-export const worldNodes: WorldNode[] = [
-  {
-    id: "launch",
-    label: "Launch Zone",
-    eyebrow: "Home",
-    description: "A mission-control entry point into the portfolio.",
-    target: "/",
-    accent: "green",
-    position: "left-[61%] top-[28%]",
-  },
-  {
-    id: "ai-terminal",
-    label: "AI Terminal",
-    eyebrow: "Projects",
-    description: "AI systems, backend products, mobile tools, and systems projects.",
-    target: "/projects/zoop",
-    accent: "cyan",
-    position: "left-[46%] top-[47%]",
-  },
-  {
-    id: "city-map",
-    label: "City Map",
-    eyebrow: "About",
-    description: "HKU, KOSA, Microsoft Student Ambassador, and Hong Kong/Korea context.",
-    target: "/about",
-    accent: "amber",
-    position: "right-[8%] top-[34%]",
-  },
-  {
-    id: "game-room",
-    label: "Game Room",
-    eyebrow: "Lab",
-    description: "Game-style interaction, systems thinking, and interface experiments.",
-    target: "/lab",
-    accent: "green",
-    position: "left-[58%] bottom-[20%]",
-  },
-  {
-    id: "archive",
-    label: "Archive Hall",
-    eyebrow: "Archive",
-    description: "Awards, leadership, certifications, languages, and technical range.",
-    target: "/archive",
-    accent: "steel",
-    position: "right-[17%] bottom-[14%]",
-  },
-];
-
 export const experience: ExperienceItem[] = [
   {
     title: "Microsoft Student Ambassador",
@@ -448,7 +390,7 @@ export const skillGroups = [
 export const languages = ["Korean - Native", "English - Professional"];
 
 export const homeStats = [
-  { value: "5", label: "project rooms" },
-  { value: "4", label: "core domains" },
-  { value: "HKU", label: "computer engineering" },
+  { value: "100+", label: "profiles processed" },
+  { value: "500+", label: "AI questions generated" },
+  { value: "90%", label: "screening time reduction" },
 ];

@@ -1,15 +1,14 @@
 # Minchan Kim Portfolio
 
-A screen-based portfolio for AI systems, backend architecture, mobile products, and interactive experiments.
+A concise one-page portfolio for AI systems, backend architecture, mobile products, and interactive product work.
 
 ## Stack
 
 - Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Framer Motion
 - lucide-react
-- Vercel-ready static routes
+- Vercel-ready static page
 
 ## Local Development
 
@@ -45,20 +44,12 @@ Portfolio content is centralized in:
 src/content/portfolio.ts
 ```
 
-Route pages reuse this content so project details, profile sections, awards, and case studies stay consistent without exposing a private PDF resume.
+The homepage reuses this content for work, profile, skills, awards, and contact sections without exposing a private PDF resume.
 
-## Key Routes
+## Key Route
 
 ```txt
 /
-/projects
-/projects/zoop
-/projects/phi
-/projects/haunted-memories
-/about
-/archive
-/lab
-/contact
 ```
 
 ## Public Artifacts
