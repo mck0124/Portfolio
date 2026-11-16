@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
+import { Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
+import Fx from "@/components/Fx";
 import "./globals.css";
 
+const sans = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+
+const pixel = Pixelify_Sans({ subsets: ["latin"], variable: "--font-pixel" });
+
+const description =
+  "Minchan Kim is a Computer Engineering student at HKU and R&D Software Engineer Intern at WayMe, building production geospatial and real-time GPS systems.";
+
 export const metadata: Metadata = {
-  title: "Minchan Kim - AI & Software Engineer",
-  description:
-    "A concise one-page portfolio of AI systems, backend architecture, mobile products, and interactive product work by Minchan Kim.",
-  openGraph: {
-    title: "Minchan Kim - AI & Software Engineer",
-    description:
-      "Explore selected AI, backend, mobile, systems, awards, and engineering work by Minchan Kim.",
-    type: "website",
-  },
+  metadataBase: new URL("https://portfolio-xi-blond-87.vercel.app"),
+  title: { default: "Minchan Kim · Software Engineer", template: "%s · Minchan Kim" },
+  description,
+  openGraph: { title: "Minchan Kim · Software Engineer", description, type: "website" },
 };
 
 export default function RootLayout({
@@ -19,8 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="min-h-full">{children}</body>
+    <html lang="en" className={`${sans.variable} ${mono.variable} ${pixel.variable}`}>
+      <body>
+        {children}
+        <Fx />
+      </body>
     </html>
   );
 }
